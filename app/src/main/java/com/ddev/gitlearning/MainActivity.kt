@@ -15,10 +15,10 @@ class MainActivity : AppCompatActivity() {
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        var randomNumber = (0..20).random()
-
         binding.randomBtn.setOnClickListener {
+            var randomNumber = (0..20).random()
             binding.digitTextView.text = randomNumber.toString()
         }
+
     }
 }
